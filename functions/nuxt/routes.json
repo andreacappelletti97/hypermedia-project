@@ -1,0 +1,72 @@
+[
+  {
+    "name": "aboutus",
+    "path": "/aboutus",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/aboutus.vue",
+    "chunkName": "pages/aboutus",
+    "_name": "_9b7f451a"
+  },
+  {
+    "name": "areas",
+    "path": "/areas",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/areas.vue",
+    "chunkName": "pages/areas",
+    "_name": "_8cfc1ae4"
+  },
+  {
+    "name": "contactus",
+    "path": "/contactus",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/contactus.vue",
+    "chunkName": "pages/contactus",
+    "_name": "_3a56c7c6"
+  },
+  {
+    "name": "people",
+    "path": "/people",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/people.vue",
+    "chunkName": "pages/people",
+    "_name": "_5ece0237"
+  },
+  {
+    "name": "privacy",
+    "path": "/privacy",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/privacy.vue",
+    "chunkName": "pages/privacy",
+    "_name": "_d9e930e0"
+  },
+  {
+    "name": "products",
+    "path": "/products",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/products.vue",
+    "chunkName": "pages/products",
+    "_name": "_34054a8c"
+  },
+  {
+    "name": "area-singlearea",
+    "path": "/area/:singlearea?",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/area/_singlearea.vue",
+    "chunkName": "pages/area/_singlearea",
+    "_name": "_09c60bcc"
+  },
+  {
+    "name": "member-singlemember",
+    "path": "/member/:singlemember?",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/member/_singlemember.vue",
+    "chunkName": "pages/member/_singlemember",
+    "_name": "_ae4aad98"
+  },
+  {
+    "name": "product-singleproduct",
+    "path": "/product/:singleproduct?",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/product/_singleproduct.vue",
+    "chunkName": "pages/product/_singleproduct",
+    "_name": "_abb30420"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/andreacappelletti/Downloads/hypermedia-project-polimi-21/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e357584c"
+  }
+]

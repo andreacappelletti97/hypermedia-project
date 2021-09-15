@@ -1,0 +1,114 @@
+{
+  "name": "chatbot",
+  "data": {
+    "kb": {
+      "continue_v": ["form", "contact"],
+      "steps_v": ["", "/contactus"],
+      "stay_message": "I do not understand, can you repeat?",
+      "question": {
+        "unknown": "I cannot understand, could you repeat?",
+        "initials": [
+          "Do you want to visit the website or contact us directly?",
+          "Would you want to contact us or visit the website?"
+        ],
+        "choices": [
+          {
+            "id": "contactor",
+            "intents": ["contact", "contact us", "information", "email"],
+            "utterance": ["I will show you the contact page then!"],
+            "payload": null
+          },
+          {
+            "id": "introduce",
+            "intents": ["guide", "website", "company"],
+            "utterance": [
+              "Okay, let's look around our website to understand what we do."
+            ],
+            "payload": null
+          }
+        ]
+      },
+      "introduce": {
+        "initials": [
+          "Okay, I am Luca, the chatbot of Rocket Inc., I will show you around",
+          "I am your personal chatbot, Luca. Let's explore our website"
+        ],
+        "completed": {
+          "utterance": "Let's view our homepage!",
+          "payload": {
+            "guide": "/"
+          }
+        }
+      },
+      "home": {
+        "initials": [
+          "This is out homepage, you can view all the areas, products, and people working at Rocket Inc.",
+          "Welcome to our homepage! Here you can view what our company is all about!"
+        ],
+        "completed": {
+          "utterance": "Let's visit our about us page!",
+          "payload": {
+            "guide": "/aboutus"
+          }
+        }
+      },
+      "about": "In the about page, you can view all the information about our company",
+      "contactor": "Do you want to view the form or just visit the page?",
+      "contactpage": "This is the contact page. Here you find all the information to contact Rocket Inc."
+    },
+    "process": {
+      "first_activity_id": "start",
+      "activities": [
+        {
+          "my_id": "start",
+          "my_type": "START",
+          "next_id": "question",
+          "callback": "start"
+        },
+        {
+          "my_id": "question",
+          "my_type": "XOR",
+          "next_id": "end",
+          "callback": "generic_xor",
+          "choices": ["contactor", "introduce"]
+        },
+        {
+          "my_id": "introduce",
+          "my_type": "TASK",
+          "next_id": "home",
+          "callback": "nothing"
+        },
+        {
+          "my_id": "home",
+          "my_type": "TASK",
+          "next_id": "about",
+          "callback": "nothing"
+        },
+        {
+          "my_id": "about",
+          "my_type": "TASK",
+          "next_id": null,
+          "callback": "nothing"
+        },
+        {
+          "my_id": "contactor",
+          "my_type": "TASK",
+          "next_id": "contactpage",
+          "callback": "guide"
+        },
+        {
+          "my_id": "contactpage",
+          "my_type": "TASK",
+          "next_id": null,
+          "callback": "nothing"
+        },
+        {
+          "my_id": "end",
+          "my_type": "END",
+          "next_id": null,
+          "callback": "nothing"
+        }
+      ]
+    }
+  }
+}

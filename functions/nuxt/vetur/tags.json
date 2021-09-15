@@ -1,0 +1,35 @@
+{
+  "LayoutFooterSection": {
+    "description": "Auto imported from components/layout/FooterSection.vue"
+  },
+  "LayoutHeaderMenu": {
+    "description": "Auto imported from components/layout/HeaderMenu.vue"
+  },
+  "SectionFeatureSection": {
+    "description": "Auto imported from components/section/FeatureSection.vue"
+  },
+  "SectionGridSection": {
+    "description": "Auto imported from components/section/GridSection.vue"
+  },
+  "SectionHeroSection": {
+    "description": "Auto imported from components/section/HeroSection.vue"
+  },
+  "SectionSocialNav": {
+    "description": "Auto imported from components/section/SocialNav.vue"
+  },
+  "SectionTestimonialsSection": {
+    "description": "Auto imported from components/section/TestimonialsSection.vue"
+  },
+  "BaseChat": {
+    "description": "Auto imported from components/base/Chat.vue"
+  },
+  "BaseGridContainer": {
+    "description": "Auto imported from components/base/GridContainer.vue"
+  },
+  "BaseOrientationInfo": {
+    "description": "Auto imported from components/base/OrientationInfo.vue"
+  },
+  "BaseSectionTitle": {
+    "description": "Auto imported from components/base/SectionTitle.vue"
+  }
+}
